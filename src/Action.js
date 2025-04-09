@@ -10,12 +10,21 @@
 
  export const dec=(count)=> async (dispatch)=>{
     dispatch({
+
         type:"DECREMENT"
     
     })
 }
 
  export const reset =()=>async (dispatch) => {
+    dispatch({
+        type:"RESET"
+    })
+
+    
+}
+
+export const login =()=>async (dispatch) => {
     dispatch({
         type:"RESET"
     })
